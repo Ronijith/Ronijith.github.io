@@ -1,0 +1,55 @@
+
+.formcontainer{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.firstname{
+    width: 212px;
+    height: 70px;
+}
+.lastname{
+    width: 212px;
+height: 70px;
+margin-left: 6px;
+}
+.email, .pswd, .datepick{
+    margin-top: 15px;
+    width: 430px;
+height: 70px;
+}
+.link{
+    color:#5C87F3
+}
+.mat-checkbox{
+    float: left;
+    margin-top: 42px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #7D7D7D;
+
+}
+.mat-input-element::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    color: #6A6A6A;
+}
+.btn{
+    float: right;
+    margin-right: 60px;
+    margin-top: 38px;
+    width: 100px;
+height: 45px;
+background: #5C87F3;
+border-radius: 5px;
+font-size: 20px;
+}
+span.a{
+    display: inline;
+}

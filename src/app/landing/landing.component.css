@@ -1,0 +1,92 @@
+.imgbox img {
+    float: left;
+    margin-left: 22px;
+    margin-top: 181px;
+}
+
+.line img {
+    width: 10px;
+    float: left;
+    margin-top: 212px;
+    margin-left: 22px;
+}
+
+.formcontainer {
+    position: absolute;
+}
+
+.formcontainer img {
+    margin-top: 123px;
+    margin-left: 1002px;
+    margin-right: 283px;
+    height: 155px;
+    width: 155px;
+}
+
+
+.login-page {
+    height: 500px;
+    border-radius: 10px;
+
+    border: 1px solid #C8C8C8;
+    width: 550px;
+    margin-left: 805px;
+    margin-top: 34px;
+    border-radius: 10px;
+    margin-bottom: 212px;
+    display: block;
+    overflow: hidden;
+}
+.togglebtn{
+    margin-top: 60px;
+    margin-left: 117px;
+    height: 60px;
+width: 316px;
+border-radius: 50px;
+box-shadow: inset -4px -4px 2px rgba(0, 0, 0, 0.1), inset 4px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.mat-button-toggle{
+    height: 60px;
+width: 158px;
+border-radius: 50px;
+color: #E03E00;
+}
+.sitxt{
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0.05em;
+margin-top: 18px;
+}
+.mat-button-toggle-checked{
+    background-color: #E03E00;
+    color: white !important;
+    }
+.mat-button-toggle:focus{
+    background-color: #E03E00;
+    color: white !important;
+}
+.footer{
+   position: absolute;
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #7D7D7D;
+}
+.help{
+    padding-left: 167px;
+    padding-right: 34px;
+}
+.privacy{
+    padding-right: 34px;
+}
+.link{
+    color: #90AFFD;
+    
+}
+.material-icons{
+font-size: smaller;
+color: #90AFFD;
+}

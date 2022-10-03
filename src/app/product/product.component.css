@@ -1,0 +1,99 @@
+.container{
+  width:1440px;
+}
+.head{
+    width: 131px;
+height: 35px;
+margin-left: 72px;
+margin-top: 61px;
+margin-bottom: 64px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 25px;
+    margin-right: 78px !important;
+  }
+  .mat-button{
+    margin-left: 57px!important;
+width: 136px;
+height: 39px;
+background: #67CD7F;
+align-items: center;
+text-align: center;
+border-radius: 6px;
+color: white;
+  }
+  .content{
+    width: 369px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+align-items: center;
+color: #6D6D6D;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+  }
+  .title,.price{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+color: #000000;
+  }
+  .title{
+    float:left;
+  }
+  .price{
+    margin-left: 4px;
+  }
+  .card{
+    margin-left: 45px;
+    margin-bottom: 44px;
+    width: 382px;
+height: 400px;
+background: #FFFFFF;
+border-radius: 6px;
+box-shadow: 3px 3px 3px #d6d6d6;
+  }
+  img{
+    width: 415px;
+height: 207.83px;
+  }
+  .btn-inc,.btn-dec {
+    width: 35.71px;
+    height: 39.63px;
+    border:none;
+    background: #F1F1F1;
+}
+.txt-count{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+color: #000000;
+
+}
+.btn-dec{
+  margin-right: 45px;
+}
+.btn-inc{
+  margin-left: 45px;
+}
+.count{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  color: #000000;
+}

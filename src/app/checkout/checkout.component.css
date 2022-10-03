@@ -1,0 +1,200 @@
+*{
+    font-family: 'Roboto';
+font-style: normal;
+}
+.header {
+    margin-bottom: 89px;
+font-weight: 400;
+font-size: 30px;
+letter-spacing: 0.05em;
+color: #000000;
+
+}
+.formcontainer{
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.firstname{
+    width: 294px;
+    height: 70px;
+}
+.lastname{
+    width: 294px;
+height: 70px;
+margin-left: 40px;
+}
+.email, .pswd{
+    margin-top: 25px;
+    width: 628px;
+height: 70px;
+}
+
+.mat-input-element::placeholder{
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    color: #6A6A6A;
+}
+.city,.state,.pin,.country{
+    margin-top:25px;
+    width:294px;
+}
+.state,.country{
+    margin-left: 34px;
+}
+.pay-btn{
+    margin-left: 26px;
+background: #5C87F3;
+width: 192px;
+height: 45px;
+font-weight: 500;
+font-size: 18px;
+color: #FFFFFF;
+}
+.cancel-btn{
+    margin-top: 58px;
+    margin-left: 305px;
+    width: 98px;
+height: 45px;
+border: 1px solid #5C87F3;
+border-radius: 6px;
+color:#5C87F3;
+background: #FFFFFF;
+}
+.card{
+    margin-top: 55px;
+    width: 590px;
+margin-left: 76px;
+background: #F9F9F9;
+border-radius: 6px;
+border: none;
+box-shadow: none;
+}
+  img{
+    width: 148px;
+height: 88px;
+  }
+  .yourcart{
+margin-left: 30px;
+margin-top: 26px;
+font-weight: 500;
+font-size: 24px;
+letter-spacing: 0.06em;
+color: #000000;
+  }
+  img{
+    margin-top: 60px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 37px;
+  }
+  .iphone{
+    margin-left: 40px;
+    float: left;
+    margin-top: 94px;
+font-weight: 400;
+font-size: 18px;
+color: #000000;
+  }
+  .price{
+    text-align: right; margin-right: 30px;
+    margin-top: 99px;
+font-weight: 600;
+font-size: 24px;
+color: #000000;
+  }
+.promo{
+    width: 346px;
+height: 70px;
+margin-left: 30px;
+margin-top: 28px;
+margin-bottom: 25px;
+}
+.apply-btn{
+    width: 130px;
+height: 50px;
+margin-left: 43px;
+margin-top: 28px;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+background: #5C87F3;
+border-radius: 6px;
+}
+.subtot,.gst,.shp{
+    margin-left: 30px;
+}
+.subtot{
+    margin-top: 28px;
+}
+
+.subtotprice{
+    text-align: right; margin-right: 30px;
+    margin-top: 28px;
+}
+.gstamt{
+    text-align: right; margin-right: 30px;
+}
+.shpprice{
+    text-align: right; margin-right: 30px;
+}
+.subtot,.gst,.shp,.subtotprice,.gstamt,.shpprice{
+font-weight: 400;
+font-size: 18px;
+letter-spacing: 0.05em;
+color: #6D6D6D;
+}
+.total{
+margin-left: 30px;
+margin-top: 28px;
+margin-bottom: 45px;
+}
+.totalprice{
+    margin-top: 28px;
+    text-align: right; margin-right: 30px;
+    margin-bottom: 45px;
+}
+.total,.totalprice{
+font-weight: 600;
+font-size: 20px;
+letter-spacing: 0.05em;
+color: #000000;
+}
+.countdot {
+    float: left;
+    background: #38297A;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 25px;
+    height: 25px;
+    padding: 4px 4px;
+    position: absolute;
+}
+
+.count {
+    margin-top: 2px;
+    margin-left: 4px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+vertical-align: middle;
+    color: #FFFFFF;
+}
+.line{
+    width: 530px;
+background: #D0D0D0;
+border: 1px solid #D0D0D0;
+}
+.price::first-letter,.subtotprice::first-letter,.shpprice::first-letter,.gstamt::first-letter,.totalprice::first-letter {
+    padding-right: 0.3em;
+  }

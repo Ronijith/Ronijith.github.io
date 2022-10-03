@@ -1,0 +1,58 @@
+<div class="container">
+<form class="formcontainer">
+  <p class="header">Shipping Address</p>
+    <mat-form-field appearance="outline"  class="firstname">
+      <input matInput placeholder="First Name">
+    </mat-form-field>
+    <mat-form-field appearance="outline"  class="lastname">
+      <input matInput placeholder="Last Name">
+    </mat-form-field>
+<br>
+<mat-form-field appearance="outline"  class="email">
+  <input matInput placeholder="Company (Optional)">
+</mat-form-field>
+<br>
+<mat-form-field appearance="outline"  class="pswd">
+  <input matInput placeholder="Flat No, Street Name">
+</mat-form-field>
+<br>
+
+<mat-form-field appearance="outline"  class="city">
+    <input matInput placeholder="City">
+  </mat-form-field>
+  <mat-form-field appearance="outline"  class="state">
+    <input matInput placeholder="State">
+  </mat-form-field>
+  <br>
+  
+  <mat-form-field appearance="outline"  class="pin">
+    <input matInput placeholder="Pincode">
+  </mat-form-field>
+  <mat-form-field appearance="outline"  class="country">
+    <input matInput placeholder="Country">
+  </mat-form-field>
+  <br>
+  <button mat-flat-button color="primary" class="cancel-btn">Cancel</button>
+  <button mat-flat-button color="primary" class="pay-btn">Proceed to Payment</button>
+</form>
+<mat-card class="card">
+    <p class="yourcart">Your Cart</p>
+    <hr class="line"><img mat-card-image src="/assets/Product.png" alt="Product"><span class="countdot">
+      <p class="count">{{no_of_items}}</p>
+  </span><p class="iphone">Iphone 14 Pro Max</p><p class="price">{{139900*no_of_items | currency:"INR":"symbol":".0"}}</p>
+<br clear="all">
+    <hr class="line">
+<mat-form-field appearance="outline"  class="promo">
+    <input matInput placeholder="Promo Code">
+  </mat-form-field><button mat-flat-button color="primary" class="apply-btn">Apply</button>
+  <hr class="line">
+  <p class="subtot" style="float: left;">Item Subtotal</p><p class="subtotprice">{{139900*no_of_items | currency:"INR":"symbol":".0"}}</p>
+  <br clear="all">
+  <p class="gst" style="float: left;">GST (5%)</p><p class="gstamt">{{(139900*no_of_items)*0.05 | currency:"INR":"symbol":".0"}}</p>
+  <br clear="all">
+  <p class="shp" style="float: left;">Shipping Charge</p><p class="shpprice">{{no_of_items === 0 ? '₹0' : 225 | currency:"INR":"symbol":".0"}}</p>
+  <br clear="all">
+  <hr class="line">
+  <p class="total" style="float:left">Total</p><p class="totalprice">{{no_of_items === 0 ? '₹0' : (139900*no_of_items)+((139900*no_of_items)*0.05)+225 | currency:"INR":"symbol":".0"}}</p>  
+</mat-card>
+</div>

@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<div class="imgbox" *ngIf="isActiveSi"><img src="/assets/SI.png"></div>
+<div class="imgbox" *ngIf="isActiveSu"><img src="/assets/SU.png"></div>
+<div class="line"><img src="/assets/Line.png"></div>
+<div class="formcontainer"><img src="/assets/Logo.png">
+  <div class="login-page" [style.padding-bottom]="padd">
+    <mat-button-toggle-group matButtonToggleGroup class="togglebtn" appearance="legacy">
+        <mat-button-toggle value="SIGN IN" class="togglebtn1" checked disableRipple (change)="onValChange($event.value)" >
+                <p class="sitxt">SIGN IN</p>
+           </mat-button-toggle>
+        <mat-button-toggle value="SIGN UP" class="togglebtn2" disableRipple (change)="onValChange($event.value)" >
+            <p class="sitxt">SIGN UP</p>
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+    <app-signin *ngIf="isActiveSi"></app-signin>
+    <app-signup *ngIf="isActiveSu" ></app-signup>
+   <p class="footer" [style.margin-top]="footer">Goto <a class="link"href="https/www.kaartech.com/" target="_blank">Kaar Technologies</a><span class="material-icons">
+    open_in_new
+    </span><span class="help">Help</span><span class="privacy">Privacy</span><span>Terms</span></p>
+</div>
+
+</div>

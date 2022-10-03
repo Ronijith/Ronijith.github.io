@@ -1,0 +1,47 @@
+.link{
+    margin-right: 165px;
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+color:#5C87F3;
+text-decoration: none;
+}
+.link:hover{
+    color:rgb(69, 69, 187);
+}
+.formcontainer{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.email{
+    height: 70px;
+width: 430px;
+border-radius: 8px;
+border: 1px;
+
+}
+.mat-input-element::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    color: #6A6A6A;
+}
+.pswd{
+    margin-top: 30px;
+    margin-bottom: 49px;
+    height: 70px;
+    width: 430px;
+    border-radius: 8px;
+}
+.btn{
+    width: 100px;
+height: 45px;
+background: #5C87F3;
+border-radius: 5px;
+font-size: 20px;
+}

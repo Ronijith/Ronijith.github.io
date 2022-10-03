@@ -1,0 +1,20 @@
+
+<form class="formcontainer" action="" #myForm="ngForm" [formGroup]="form">
+
+    <mat-form-field appearance="outline"  class="email" >
+      <input matInput placeholder="Email" id="email" formControlName="email">
+      <mat-error *ngIf="f['email'].hasError('required')">Email is required</mat-error>
+    <mat-error *ngIf="f['email'].hasError('email')">Email is invalid</mat-error>
+    </mat-form-field>
+<br>
+    <mat-form-field appearance="outline"  class="pswd">
+      <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" id="pass" formControlName="password">
+      <mat-error *ngIf="f['password'].invalid">Password is required</mat-error>
+      <button style="border:none" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon style="color:#6A6A6A">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <br>
+    <a href="" class="link">Forgot Password ?</a>
+      <button mat-flat-button color="primary" class="btn" [disabled]="!myForm.valid" (click)="signin()">Sign In</button>
+</form>

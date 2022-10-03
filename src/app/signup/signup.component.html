@@ -1,0 +1,47 @@
+<form class="formcontainer" action="" #myForm="ngForm" [formGroup]="form">
+
+  <mat-form-field appearance="outline" class="firstname">
+    <input matInput placeholder="First Name" formControlName ="name" required>
+    <mat-error *ngIf="f['name'].hasError('required')">First name is required</mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="lastname">
+    <input matInput placeholder="Last Name">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="datepick">
+    <input matInput [matDatepicker]="dob" placeholder="Date of Birth">
+    <mat-datepicker-toggle matSuffix [for]="dob"></mat-datepicker-toggle>
+    <mat-datepicker #dob></mat-datepicker>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="email">
+    <input matInput placeholder="Email" formControlName="email" >
+    <mat-error *ngIf="f['email'].hasError('required')">Email is required</mat-error>
+    <mat-error *ngIf="f['email'].hasError('email')">Email is invalid</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="pswd">
+    <input matInput placeholder="Password" formControlName="password">
+    <mat-error *ngIf="f['password'].invalid">Password is required</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="pswd">
+    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Re-enter Password"
+      formControlName="confirmPassword">
+    <button style="border:none" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="hide">
+      <mat-icon style="color:#6A6A6A">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+    <mat-error *ngIf="f['confirmPassword'].pristine || f['confirmPassword'].errors?.['MatchPassword']">Password does not
+      match</mat-error>
+  </mat-form-field>
+  <br><span class="a">
+    <mat-checkbox formControlName="acceptTerms" id="acceptTerms">
+      <div>Accept the <a href class="link">Terms</a> and <a href class="link">Conditions</a></div>
+    </mat-checkbox>
+    <mat-error *ngIf="submitted && f['acceptTerms'].errors" style="float: left;margin-top:40px;">
+      *
+    </mat-error>
+    <button type="submit" mat-flat-button color="primary" class="btn" (click)="signup()">Sign Up</button>
+  </span>
+</form>

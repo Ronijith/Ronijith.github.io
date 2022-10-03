@@ -1,0 +1,80 @@
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <div class="container">
+    <mat-toolbar color="primary">
+        <span class="dot"><img class="logo" src="/assets/Logo.png" alt="logo"></span>
+        <span class="home" id="top">Home</span>
+        <button class="viewbtn" (click)="viewproduct()" autofocus><img class="packicon" src="/assets/pack.png">View
+            Products</button>
+        <button class="checkout" (click)="viewcheckout()"><span class="material-symbols-outlined"
+                style="margin-left: 1px; margin-right: 16px; font-size: 35px;">
+                shopping_cart_checkout
+            </span>Check out</button>
+        <span *ngIf="isActive" class="countdot">
+            <p class="count">{{count}}</p>
+        </span>
+        <span class="example-spacer"></span>
+        <span class="material-symbols-outlined"
+            style="margin-right:16.81px;font-size: 30px;margin-top: 44px;margin-bottom: 45px;">
+            account_circle
+        </span>
+        <button class="name" (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
+            {{currentUser.user}}</button>
+        <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]="isOpen">
+            <ul class="example-list">
+                <p> <span class="material-symbols-outlined"
+                    style="color: #38297A;margin-top: 25px;font-weight: 600px; font-size: 60px;margin-left: 110px;">
+                    account_circle
+                </span></p>
+                <p class="profilename">{{currentUser.user}}</p>
+                <p class="profilemail">{{currentUser.email}}</p>
+                <button mat-flat-button color="primary" class="logout" style="margin-left:100px;background: #C52323;margin-top: 40px;" routerLink="/landing">Log Out</button>
+            </ul>
+        </ng-template>
+    </mat-toolbar>
+    <app-product *ngIf="isActive" (onCountPicked)="addCart($event)"></app-product>
+    <app-checkout *ngIf="!isActive" [no_of_items]="count"></app-checkout>
+    <footer class="footer" [style.margin-top]="footer">
+        <div class="row1">
+            <p class="kaar">Kaar Technologies</p>
+            <img class="sap" src="/assets/SAP.png">
+        </div>
+        <div class="row2">
+            <p class="company">Company</p>
+            <p class="compcont">About Kaar Tech</p>
+            <p class="compcont">Contact us</p>
+        </div>
+        <div class="row3">
+            <p class="service">Service</p>
+            <p class="servcont">View Product</p>
+            <p class="servcont">Check out</p>
+        </div>
+        <div class="row4">
+            <pre>   " Kaar Tech is the World’s Best Pure-Play SAP Digital Transformation 
+    Consulting and Services Partner driven by 1000+ Specialized SAP Consultants 
+    and 5000+ Man-Years of SAP Expertise gained through 2000+ projects for 
+    350+ customers across the globe. "
+    </pre>
+        </div>
+           <button class='footerdot'(click)="scrollToTop()"> <span class="material-symbols-outlined" style="transform:rotate(180deg);color:#38297A">
+                file_download
+            </span></button>
+        <br clear="all">
+        <div>
+            <hr class="line">
+        </div>
+        <div class="footerfoot">
+            <span>Copyright © 2022 Kaar Tech, All Rights Reserved Privacy Policy</span>         
+        </div>
+        <div class="icons">
+        <img src="/assets/link.png" style="margin-left: 241px;" >
+                <img src="/assets/fb.png"style="margin-left: 24px;">
+                <img src="/assets/insta.png"style="margin-left: 24px;">
+                <img src="/assets/tw.png"style="margin-left: 24px;">
+                <img src="/assets/yt.png"style="margin-left: 24px;"></div>
+    </footer>
+</div>
